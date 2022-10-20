@@ -15,7 +15,7 @@ from collections import defaultdict
 from t_ocr import predict_image
 from time import sleep
 from apscheduler.schedulers.blocking import BlockingScheduler
-from multiprocessing import Process
+from multiprocessing import Process, Value
 from goto import with_goto
 from goto import goto, label
 
@@ -130,13 +130,14 @@ if __name__ == '__main__':
             ret = ReserveInfoCapture(key, page)
             if ret is not None:
                 field_time_for_every_field[key] = ret
+        num_reserved = Value('i', 0)
         if flag_running_now:
             for key, field_time in field_time_for_every_field.items():
-                ReserveLoop(reserve_dict[key], field_time)
+                ReserveLoop(reserve_dict[key], field_time, num_reserved)
         else:
             process_list = []
             for key, field_time in field_time_for_every_field.items():
-                p = Process(target=ReserveLoop, args=(reserve_dict[key], field_time,))
+                p = Process(target=ReserveLoop, args=(reserve_dict[key], field_time, num_reserved))
                 p.start()
                 process_list.append(p)
             for p in process_list:
@@ -209,7 +210,7 @@ if __name__ == '__main__':
 
 
     @with_goto
-    def ReserveLoop(single_field_dict, field_time):
+    def ReserveLoop(single_field_dict, field_time, num_reserved):
         gym_code = single_field_dict['gym_code']
         field_code = single_field_dict['field_code']
         request_date = str(datetime.date.today() + datetime.timedelta(days=days_ahead))
@@ -282,8 +283,9 @@ if __name__ == '__main__':
                     pred = CaptchaIndentifier(jpg_bytes)
                     print(response_json['msg'])
                     if re.match(r'预定成功', response_json['msg']):
-                        field_reserved = field_reserved + 1
-                        if field_reserved >= max_reserve:
+                        with num_reserved.get_lock():
+                            num_reserved.value += 1
+                        if num_reserved.value >= max_reserve:
                             return
                             # 抢够了
                         session_list.remove(key)
