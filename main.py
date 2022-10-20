@@ -30,7 +30,7 @@ if __name__ == '__main__':
     newdic3 = {entry['name']:entry['value'] for entry in dic['log']['entries'][1]['request']['queryString']}
     '''
     # 全局变量
-    flag_running_now = True
+    flag_running_now = False
 
     cnn_ocr = keras.models.load_model('./cnn_ocr_v1.h5')
     username = '2021310638'
@@ -251,6 +251,7 @@ if __name__ == '__main__':
         time_remain = reserve_time - current_time
         if time_remain > 0:
             sleep(time_remain)  # 决不能在开场前就抢
+        print('服务器时间现为{}'.format(str(datetime.datetime.now() - time_diff)))
         for idx in range(attempt_num):
             # 订场
             for key in session_list:
@@ -300,7 +301,7 @@ if __name__ == '__main__':
 
 
     if not flag_running_now:
-        shed.add_job(Preprations(), 'cron', day_of_week='fri,sat,mon,wed', hour=7, minute=58, second=0)
+        shed.add_job(Preprations, 'cron', day_of_week='fri,sat,mon,wed', hour=7, minute=58, second=0)
         shed.start()
     else:
         Preprations()
