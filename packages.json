@@ -1,0 +1,5956 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "WebInspector",
+      "version": "537.36"
+    },
+    "pages": [
+      {
+        "startedDateTime": "2022-10-18T15:26:19.663Z",
+        "id": "page_2",
+        "title": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+        "pageTimings": {
+          "onContentLoad": 278.608999971766,
+          "onLoad": 459.33599997079
+        }
+      },
+      {
+        "startedDateTime": "2022-10-18T15:01:40.158Z",
+        "id": "page_1",
+        "title": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4037036&time_date=2022-10-20&userType=",
+        "pageTimings": {
+          "onContentLoad": 226.62500001024455,
+          "onLoad": 405.7770000072196
+        }
+      }
+    ],
+    "entries": [
+      {
+        "_initiator": {
+          "type": "other"
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "document",
+        "cache": {},
+        "connection": "549141",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType="
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4037036&time_date=2022-10-20&userType="
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "document"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "navigate"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-user",
+              "value": "?1"
+            },
+            {
+              "name": "upgrade-insecure-requests",
+              "value": "1"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "ms",
+              "value": "viewGymBook"
+            },
+            {
+              "name": "gymnasium_id",
+              "value": "3998000"
+            },
+            {
+              "name": "item_id",
+              "value": "4045681"
+            },
+            {
+              "name": "time_date",
+              "value": "2022-10-20"
+            },
+            {
+              "name": "userType",
+              "value": ""
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/gymbook",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-language",
+              "value": "zh-CN"
+            },
+            {
+              "name": "content-type",
+              "value": "text/html; charset=GBK"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:24:41 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 45368,
+            "mimeType": "text/html"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 45567,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.662Z",
+        "time": 122.87900000889228,
+        "timings": {
+          "blocked": 1.8620000062473119,
+          "dns": 1.3559999999999999,
+          "ssl": 42.929,
+          "connect": 44.995,
+          "send": 0.2469999999999999,
+          "wait": 74.04299999177084,
+          "receive": 0.3760000108741224,
+          "_blocked_queueing": 1.3080000062473118,
+          "_blocked_proxy": 0.11000000000000004
+        }
+      },
+      {
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "send",
+                "scriptId": "352",
+                "url": "https://50.tsinghua.edu.cn/js/jquery/jquery.js",
+                "lineNumber": 8142,
+                "columnNumber": 9
+              },
+              {
+                "functionName": "ajax",
+                "scriptId": "352",
+                "url": "https://50.tsinghua.edu.cn/js/jquery/jquery.js",
+                "lineNumber": 7620,
+                "columnNumber": 14
+              },
+              {
+                "functionName": "jQuery.<computed>",
+                "scriptId": "352",
+                "url": "https://50.tsinghua.edu.cn/js/jquery/jquery.js",
+                "lineNumber": 7146,
+                "columnNumber": 16
+              },
+              {
+                "functionName": "saveOdder",
+                "scriptId": "362",
+                "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4037036&time_date=2022-10-20&userType=",
+                "lineNumber": 274,
+                "columnNumber": 3
+              },
+              {
+                "functionName": "onclick",
+                "scriptId": "1109",
+                "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4037036&time_date=2022-10-20&userType=",
+                "lineNumber": 537,
+                "columnNumber": 42
+              }
+            ]
+          }
+        },
+        "_priority": "High",
+        "_resourceType": "xhr",
+        "cache": {},
+        "connection": "547391",
+        "pageref": "page_1",
+        "request": {
+          "method": "POST",
+          "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=hadContactOrNot",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "POST"
+            },
+            {
+              "name": ":path",
+              "value": "/gymbook/gymBookAction.do?ms=hadContactOrNot"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "content-length",
+              "value": "0"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "origin",
+              "value": "https://50.tsinghua.edu.cn"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4037036&time_date=2022-10-20&userType="
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "x-requested-with",
+              "value": "XMLHttpRequest"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "ms",
+              "value": "hadContactOrNot"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/gymbook",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-language",
+              "value": "zh-CN"
+            },
+            {
+              "name": "content-type",
+              "value": "text/html; charset=GBK"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:07:45 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 11,
+            "mimeType": "text/html"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 192,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:09:23.525Z",
+        "time": 61.15400000909716,
+        "timings": {
+          "blocked": 1.1600000022798778,
+          "dns": 0.41100000000000003,
+          "ssl": 39.230000000000004,
+          "connect": 40.354,
+          "send": 0.20400000000000063,
+          "wait": 18.712000009994952,
+          "receive": 0.3129999968223274,
+          "_blocked_queueing": 0.6730000022798777,
+          "_blocked_proxy": 0.14800000000000002
+        }
+      },
+      {
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [],
+            "parent": {
+              "description": "Image",
+              "callFrames": [
+                {
+                  "functionName": "attr",
+                  "scriptId": "352",
+                  "url": "https://50.tsinghua.edu.cn/js/jquery/jquery.js",
+                  "lineNumber": 2524,
+                  "columnNumber": 9
+                },
+                {
+                  "functionName": "access",
+                  "scriptId": "352",
+                  "url": "https://50.tsinghua.edu.cn/js/jquery/jquery.js",
+                  "lineNumber": 831,
+                  "columnNumber": 4
+                },
+                {
+                  "functionName": "attr",
+                  "scriptId": "352",
+                  "url": "https://50.tsinghua.edu.cn/js/jquery/jquery.js",
+                  "lineNumber": 2203,
+                  "columnNumber": 16
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "365",
+                  "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4037036&time_date=2022-10-20&userType=",
+                  "lineNumber": 724,
+                  "columnNumber": 21
+                },
+                {
+                  "functionName": "dispatch",
+                  "scriptId": "352",
+                  "url": "https://50.tsinghua.edu.cn/js/jquery/jquery.js",
+                  "lineNumber": 3304,
+                  "columnNumber": 50
+                },
+                {
+                  "functionName": "eventHandle",
+                  "scriptId": "352",
+                  "url": "https://50.tsinghua.edu.cn/js/jquery/jquery.js",
+                  "lineNumber": 2910,
+                  "columnNumber": 27
+                }
+              ]
+            }
+          }
+        },
+        "_priority": "Low",
+        "_resourceType": "image",
+        "cache": {},
+        "connection": "547391",
+        "pageref": "page_1",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/Kaptcha.jpg?69",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/Kaptcha.jpg?69"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4037036&time_date=2022-10-20&userType="
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "image"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "69",
+              "value": ""
+            }
+          ],
+          "cookies": [
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "no-store, no-cache, must-revalidate"
+            },
+            {
+              "name": "cache-control",
+              "value": "post-check=0, pre-check=0"
+            },
+            {
+              "name": "content-type",
+              "value": "image/jpeg"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:07:53 GMT"
+            },
+            {
+              "name": "expires",
+              "value": "Thu, 01 Jan 1970 00:00:00 GMT"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 2624,
+            "mimeType": "image/jpeg"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 2773,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:09:31.386Z",
+        "time": 11.858999961987138,
+        "timings": {
+          "blocked": 1.8879999781437218,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.16200000000000003,
+          "wait": 9.516999972302466,
+          "receive": 0.29200001154094934,
+          "_blocked_queueing": 1.1819999781437218,
+          "_blocked_proxy": 0.17400000000000004
+        }
+      },
+      {
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "send",
+                "scriptId": "352",
+                "url": "https://50.tsinghua.edu.cn/js/jquery/jquery.js",
+                "lineNumber": 8142,
+                "columnNumber": 9
+              },
+              {
+                "functionName": "ajax",
+                "scriptId": "352",
+                "url": "https://50.tsinghua.edu.cn/js/jquery/jquery.js",
+                "lineNumber": 7620,
+                "columnNumber": 14
+              },
+              {
+                "functionName": "ajaxSubmit",
+                "scriptId": "364",
+                "url": "https://50.tsinghua.edu.cn/gymjs/gymcommon.js",
+                "lineNumber": 138,
+                "columnNumber": 3
+              },
+              {
+                "functionName": "saveBookFrmWithPay",
+                "scriptId": "362",
+                "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4037036&time_date=2022-10-20&userType=",
+                "lineNumber": 298,
+                "columnNumber": 1
+              },
+              {
+                "functionName": "changeSelected",
+                "scriptId": "362",
+                "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4037036&time_date=2022-10-20&userType=",
+                "lineNumber": 268,
+                "columnNumber": 1
+              },
+              {
+                "functionName": "onclick",
+                "scriptId": "1111",
+                "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4037036&time_date=2022-10-20&userType=",
+                "lineNumber": 697,
+                "columnNumber": 76
+              }
+            ]
+          }
+        },
+        "_priority": "High",
+        "_resourceType": "xhr",
+        "cache": {},
+        "connection": "547391",
+        "pageref": "page_1",
+        "request": {
+          "method": "POST",
+          "url": "https://50.tsinghua.edu.cn/gymbook/gymbook/gymBookAction.do?ms=saveGymBook",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "POST"
+            },
+            {
+              "name": ":path",
+              "value": "/gymbook/gymbook/gymBookAction.do?ms=saveGymBook"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "content-length",
+              "value": "297"
+            },
+            {
+              "name": "content-type",
+              "value": "application/x-www-form-urlencoded"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "origin",
+              "value": "https://50.tsinghua.edu.cn"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4037036&time_date=2022-10-20&userType="
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "x-requested-with",
+              "value": "XMLHttpRequest"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "ms",
+              "value": "saveGymBook"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/gymbook/gymbook",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/gymbook",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 297,
+          "postData": {
+            "mimeType": "application/x-www-form-urlencoded",
+            "text": "bookData.totalCost=0&bookData.book_person_zjh=&bookData.book_person_name=&bookData.book_person_phone=18175862019&gymnasium_idForCache=3998000&item_idForCache=4037036&time_dateForCache=2022-10-20&userTypeNumForCache=1&code=Rvvt&putongRes=putongRes&selectedPayWay=0&allFieldTime=5500428%232022-10-20",
+            "params": [
+              {
+                "name": "bookData.totalCost",
+                "value": "0"
+              },
+              {
+                "name": "bookData.book_person_zjh",
+                "value": ""
+              },
+              {
+                "name": "bookData.book_person_name",
+                "value": ""
+              },
+              {
+                "name": "bookData.book_person_phone",
+                "value": "18175862019"
+              },
+              {
+                "name": "gymnasium_idForCache",
+                "value": "3998000"
+              },
+              {
+                "name": "item_idForCache",
+                "value": "4037036"
+              },
+              {
+                "name": "time_dateForCache",
+                "value": "2022-10-20"
+              },
+              {
+                "name": "userTypeNumForCache",
+                "value": "1"
+              },
+              {
+                "name": "code",
+                "value": "Rvvt"
+              },
+              {
+                "name": "putongRes",
+                "value": "putongRes"
+              },
+              {
+                "name": "selectedPayWay",
+                "value": "0"
+              },
+              {
+                "name": "allFieldTime",
+                "value": "5500428%232022-10-20"
+              }
+            ]
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-language",
+              "value": "zh-CN"
+            },
+            {
+              "name": "content-type",
+              "value": "text/html; charset=GBK"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:08:02 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 288,
+            "mimeType": "text/html"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 337,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:09:40.140Z",
+        "time": 24.784000008367002,
+        "timings": {
+          "blocked": 1.077000047300011,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.19,
+          "wait": 23.266000028889625,
+          "receive": 0.2509999321773648,
+          "_blocked_queueing": 0.7630000473000109,
+          "_blocked_proxy": 0.15500000000000003
+        }
+      },
+      {
+        "_fromCache": "disk",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+          "lineNumber": 20
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "stylesheet",
+        "cache": {},
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/bootstrap/css/bootstrap.css",
+          "httpVersion": "http/2.0",
+          "headers": [],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "text/css"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 09:04:11 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"GX6MuCXEq3m\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Mon, 10 Oct 2022 02:42:11 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 130408,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.792Z",
+        "time": 11.399000009987503,
+        "timings": {
+          "blocked": 9.79000002618879,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0.44500002630054947,
+          "receive": 1.163999957498163,
+          "_blocked_queueing": 9.62000002618879
+        }
+      },
+      {
+        "_fromCache": "disk",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+          "lineNumber": 21
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "stylesheet",
+        "cache": {},
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/css/themes/default.css",
+          "httpVersion": "http/2.0",
+          "headers": [],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "text/css"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 09:04:11 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"GX6Sc9kdOX0\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Mon, 10 Oct 2022 02:42:12 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 7086,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.792Z",
+        "time": 15.63400001032278,
+        "timings": {
+          "blocked": 13.122999990213662,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 1.70600000224635,
+          "receive": 0.805000017862767,
+          "_blocked_queueing": 13.016999990213662
+        }
+      },
+      {
+        "_fromCache": "disk",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+          "lineNumber": 22
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "stylesheet",
+        "cache": {},
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/bootstrap/css/bootstrap-responsive.css",
+          "httpVersion": "http/2.0",
+          "headers": [],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "text/css"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 09:04:11 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"GX6MuCXEQV0\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Mon, 10 Oct 2022 02:42:11 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 21750,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.792Z",
+        "time": 15.992000000551343,
+        "timings": {
+          "blocked": 13.212999952495098,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 2.0289999833293257,
+          "receive": 0.7500000647269189,
+          "_blocked_queueing": 13.141999952495098
+        }
+      },
+      {
+        "_fromCache": "disk",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+          "lineNumber": 23
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "stylesheet",
+        "cache": {},
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/page.css",
+          "httpVersion": "http/2.0",
+          "headers": [],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "text/css"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 09:04:11 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"GX+rYS0njaq\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Mon, 10 Oct 2022 02:43:01 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 32028,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.792Z",
+        "time": 16.996000020299107,
+        "timings": {
+          "blocked": 13.283000035077334,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 2.085999994672835,
+          "receive": 1.6269999905489385,
+          "_blocked_queueing": 13.214000035077333
+        }
+      },
+      {
+        "_fromCache": "disk",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+          "lineNumber": 24
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "stylesheet",
+        "cache": {},
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/css/simplenso.css",
+          "httpVersion": "http/2.0",
+          "headers": [],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "text/css"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 09:04:11 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"GX6MuCXEMVk\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Mon, 10 Oct 2022 02:42:11 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 5350,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.792Z",
+        "time": 17.5419999868609,
+        "timings": {
+          "blocked": 13.379999974004924,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 2.1709999863915144,
+          "receive": 1.9910000264644623,
+          "_blocked_queueing": 13.312999974004924
+        }
+      },
+      {
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+          "lineNumber": 25
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "549141",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/js/jquery/jquery.js",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/js/jquery/jquery.js"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType="
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "script"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/js/jquery",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/js",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/x-javascript"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:24:41 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 258085,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 258299,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.792Z",
+        "time": 60.19000004744157,
+        "timings": {
+          "blocked": 16.47299999940023,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.6780000000000004,
+          "wait": 7.26299998557195,
+          "receive": 35.77600006246939,
+          "_blocked_queueing": 13.430999999400228,
+          "_blocked_proxy": 0.30900000000000016
+        }
+      },
+      {
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+          "lineNumber": 26
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "549141",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/bootstrap/js/bootstrap.min.js",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/bootstrap/js/bootstrap.min.js"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType="
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "script"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/bootstrap/js",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/x-javascript"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:24:41 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 31596,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 31648,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.793Z",
+        "time": 36.49600001517683,
+        "timings": {
+          "blocked": 17.586999996535482,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.2869999999999999,
+          "wait": 13.417000024620442,
+          "receive": 5.204999994020909,
+          "_blocked_queueing": 13.52999999653548,
+          "_blocked_proxy": 1.0139999999999998
+        }
+      },
+      {
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+          "lineNumber": 27
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "549141",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/scripts/jquery.cookie/jquery.cookie.js",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/scripts/jquery.cookie/jquery.cookie.js"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType="
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "script"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/scripts/jquery.cookie",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/x-javascript"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:24:41 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 1839,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 1873,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.793Z",
+        "time": 32.678999996278435,
+        "timings": {
+          "blocked": 17.607999991316348,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.20000000000000018,
+          "wait": 14.18300000488013,
+          "receive": 0.6880000000819564,
+          "_blocked_queueing": 13.750999991316348,
+          "_blocked_proxy": 0.548
+        }
+      },
+      {
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+          "lineNumber": 28
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "549141",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/scripts/simplenso/simplenso.js",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/scripts/simplenso/simplenso.js"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType="
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "script"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/scripts/simplenso",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/x-javascript"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:24:41 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 21262,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 21305,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.793Z",
+        "time": 42.19900001771748,
+        "timings": {
+          "blocked": 17.67500004226342,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.27200000000000024,
+          "wait": 22.341999983686954,
+          "receive": 1.9099999917671084,
+          "_blocked_queueing": 13.880000042263418,
+          "_blocked_proxy": 0.6120000000000001
+        }
+      },
+      {
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+          "lineNumber": 29
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "549141",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/My97DatePicker/WdatePicker.js",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/My97DatePicker/WdatePicker.js"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType="
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "script"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/My97DatePicker",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/x-javascript"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:24:41 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 9247,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 9281,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.793Z",
+        "time": 32.667000021319836,
+        "timings": {
+          "blocked": 17.32700002361834,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.16599999999999993,
+          "wait": 14.152000015515835,
+          "receive": 1.0219999821856618,
+          "_blocked_queueing": 13.61000002361834,
+          "_blocked_proxy": 0.7879999999999998
+        }
+      },
+      {
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+          "lineNumber": 62
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "549141",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/jsf/lib/layer/2.1/layer.js",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/jsf/lib/layer/2.1/layer.js"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType="
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "script"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/jsf/lib/layer/2.1",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/x-javascript"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:24:41 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 14934,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 14968,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.793Z",
+        "time": 32.37500000977889,
+        "timings": {
+          "blocked": 17.250000046972186,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.11000000000000032,
+          "wait": 13.6760000115484,
+          "receive": 1.3389999512583017,
+          "_blocked_queueing": 13.636000046972185,
+          "_blocked_proxy": 0.613
+        }
+      },
+      {
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+          "lineNumber": 63
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "549141",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/gymjs/gymcommon.js",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/gymjs/gymcommon.js"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType="
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "script"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/gymjs",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/x-javascript"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:24:41 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 5000,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 5043,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.793Z",
+        "time": 32.00999996624887,
+        "timings": {
+          "blocked": 17.2259999569729,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.05099999999999971,
+          "wait": 13.940999973986298,
+          "receive": 0.792000035289675,
+          "_blocked_queueing": 13.799999956972897,
+          "_blocked_proxy": 0.8199999999999998
+        }
+      },
+      {
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+          "lineNumber": 64
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "549141",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/gymjs/gymbook.js",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/gymjs/gymbook.js"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType="
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "script"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/gymjs",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/x-javascript"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:24:41 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 15357,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 15400,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.794Z",
+        "time": 35.1410000002943,
+        "timings": {
+          "blocked": 17.21199997271225,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.1499999999999999,
+          "wait": 15.159999992243947,
+          "receive": 2.6190000353381038,
+          "_blocked_queueing": 13.824999972712249,
+          "_blocked_proxy": 0.8810000000000002
+        }
+      },
+      {
+        "_fromCache": "disk",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+          "lineNumber": 412
+        },
+        "_priority": "High",
+        "_resourceType": "image",
+        "cache": {},
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/images/member_ph.png",
+          "httpVersion": "http/2.0",
+          "headers": [],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-length",
+              "value": "1507"
+            },
+            {
+              "name": "content-type",
+              "value": "image/png"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 09:05:03 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "\"GX7AUXPlZ5p\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Mon, 10 Oct 2022 02:42:20 GMT"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 1507,
+            "mimeType": "image/png"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.794Z",
+        "time": 112.05499997595325,
+        "timings": {
+          "blocked": 111.08400000000745,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0.6090000134669245,
+          "receive": 0.3619999624788761,
+          "_blocked_queueing": 110.85800000000745
+        }
+      },
+      {
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+          "lineNumber": 691
+        },
+        "_priority": "Low",
+        "_resourceType": "image",
+        "cache": {},
+        "connection": "549141",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/Kaptcha.jpg",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/Kaptcha.jpg"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType="
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "image"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "cache-control",
+              "value": "no-store, no-cache, must-revalidate"
+            },
+            {
+              "name": "cache-control",
+              "value": "post-check=0, pre-check=0"
+            },
+            {
+              "name": "content-type",
+              "value": "image/jpeg"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:24:41 GMT"
+            },
+            {
+              "name": "expires",
+              "value": "Thu, 01 Jan 1970 00:00:00 GMT"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 2761,
+            "mimeType": "image/jpeg"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 2887,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.794Z",
+        "time": 141.6869999957271,
+        "timings": {
+          "blocked": 112.16399998262152,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.2540000000000001,
+          "wait": 29.019999979741872,
+          "receive": 0.2490000333636999,
+          "_blocked_queueing": 111.21499998262152,
+          "_blocked_proxy": 0.625
+        }
+      },
+      {
+        "_fromCache": "disk",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "K",
+                "scriptId": "1812",
+                "url": "https://50.tsinghua.edu.cn/My97DatePicker/WdatePicker.js",
+                "lineNumber": 49,
+                "columnNumber": 2569
+              },
+              {
+                "functionName": "",
+                "scriptId": "1812",
+                "url": "https://50.tsinghua.edu.cn/My97DatePicker/WdatePicker.js",
+                "lineNumber": 49,
+                "columnNumber": 740
+              },
+              {
+                "functionName": "",
+                "scriptId": "1812",
+                "url": "https://50.tsinghua.edu.cn/My97DatePicker/WdatePicker.js",
+                "lineNumber": 49,
+                "columnNumber": 8134
+              }
+            ]
+          }
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "stylesheet",
+        "cache": {},
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/My97DatePicker/skin/WdatePicker.css",
+          "httpVersion": "http/2.0",
+          "headers": [],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/My97DatePicker",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "text/css"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 09:03:30 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"GX+rYS0nbos\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Mon, 10 Oct 2022 02:43:01 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 158,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.912Z",
+        "time": 1.65200000628829,
+        "timings": {
+          "blocked": 1.1970000322684646,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0.1819999907389283,
+          "receive": 0.27299998328089714,
+          "_blocked_queueing": 0.9980000322684646
+        }
+      },
+      {
+        "_fromCache": "disk",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "use",
+                "scriptId": "1814",
+                "url": "https://50.tsinghua.edu.cn/jsf/lib/layer/2.1/layer.js",
+                "lineNumber": 1,
+                "columnNumber": 1006
+              },
+              {
+                "functionName": "",
+                "scriptId": "1814",
+                "url": "https://50.tsinghua.edu.cn/jsf/lib/layer/2.1/layer.js",
+                "lineNumber": 1,
+                "columnNumber": 14827
+              },
+              {
+                "functionName": "",
+                "scriptId": "1814",
+                "url": "https://50.tsinghua.edu.cn/jsf/lib/layer/2.1/layer.js",
+                "lineNumber": 1,
+                "columnNumber": 14849
+              },
+              {
+                "functionName": "",
+                "scriptId": "1814",
+                "url": "https://50.tsinghua.edu.cn/jsf/lib/layer/2.1/layer.js",
+                "lineNumber": 1,
+                "columnNumber": 14852
+              }
+            ]
+          }
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "stylesheet",
+        "cache": {},
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/jsf/lib/layer/2.1/skin/layer.css",
+          "httpVersion": "http/2.0",
+          "headers": [],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/jsf/lib/layer/2.1",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "text/css"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 09:05:03 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"GX9bHV5JHzj\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Mon, 10 Oct 2022 02:42:47 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 11333,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.914Z",
+        "time": 0.9620000491850078,
+        "timings": {
+          "blocked": 0.650000045415014,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0.12400002743676306,
+          "receive": 0.18799997633323073,
+          "_blocked_queueing": 0.564000045415014
+        }
+      },
+      {
+        "_fromCache": "disk",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/bootstrap/css/bootstrap.css"
+        },
+        "_priority": "High",
+        "_resourceType": "image",
+        "cache": {},
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/bootstrap/img/glyphicons-halflings.png",
+          "httpVersion": "http/2.0",
+          "headers": [],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-length",
+              "value": "12799"
+            },
+            {
+              "name": "content-type",
+              "value": "image/png"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 09:05:03 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "\"GX6MuCXEOJ9\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Mon, 10 Oct 2022 02:42:11 GMT"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 12799,
+            "mimeType": "image/png"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.915Z",
+        "time": 0.8449999731965363,
+        "timings": {
+          "blocked": 0.5609999667182565,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0.10599998987466097,
+          "receive": 0.17800001660361886,
+          "_blocked_queueing": 0.4389999667182565
+        }
+      },
+      {
+        "_fromCache": "disk",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/bootstrap/css/bootstrap.css"
+        },
+        "_priority": "High",
+        "_resourceType": "image",
+        "cache": {},
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/bootstrap/img/glyphicons-halflings-white.png",
+          "httpVersion": "http/2.0",
+          "headers": [],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-length",
+              "value": "8777"
+            },
+            {
+              "name": "content-type",
+              "value": "image/png"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 09:05:03 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "\"GX6MuCXENLH\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Mon, 10 Oct 2022 02:42:11 GMT"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 8777,
+            "mimeType": "image/png"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.934Z",
+        "time": 1.5750000020489097,
+        "timings": {
+          "blocked": 0.8059999467805028,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0.5989999831654131,
+          "receive": 0.17000007210299373,
+          "_blocked_queueing": 0.6809999467805028
+        }
+      },
+      {
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "html",
+                "scriptId": "1808",
+                "url": "https://50.tsinghua.edu.cn/js/jquery/jquery.js",
+                "lineNumber": 5911,
+                "columnNumber": 24
+              },
+              {
+                "functionName": "viewBookTable",
+                "scriptId": "1818",
+                "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+                "lineNumber": 166,
+                "columnNumber": 20
+              },
+              {
+                "functionName": "",
+                "scriptId": "1818",
+                "url": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=",
+                "lineNumber": 157,
+                "columnNumber": 1
+              },
+              {
+                "functionName": "fire",
+                "scriptId": "1808",
+                "url": "https://50.tsinghua.edu.cn/js/jquery/jquery.js",
+                "lineNumber": 1049,
+                "columnNumber": 29
+              },
+              {
+                "functionName": "fireWith",
+                "scriptId": "1808",
+                "url": "https://50.tsinghua.edu.cn/js/jquery/jquery.js",
+                "lineNumber": 1167,
+                "columnNumber": 6
+              },
+              {
+                "functionName": "ready",
+                "scriptId": "1808",
+                "url": "https://50.tsinghua.edu.cn/js/jquery/jquery.js",
+                "lineNumber": 422,
+                "columnNumber": 13
+              },
+              {
+                "functionName": "DOMContentLoaded",
+                "scriptId": "1808",
+                "url": "https://50.tsinghua.edu.cn/js/jquery/jquery.js",
+                "lineNumber": 912,
+                "columnNumber": 9
+              }
+            ]
+          }
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "document",
+        "cache": {},
+        "connection": "549141",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType="
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "iframe"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "navigate"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "upgrade-insecure-requests",
+              "value": "1"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "ms",
+              "value": "viewBook"
+            },
+            {
+              "name": "gymnasium_id",
+              "value": "3998000"
+            },
+            {
+              "name": "item_id",
+              "value": "4045681"
+            },
+            {
+              "name": "time_date",
+              "value": "2022-10-20"
+            },
+            {
+              "name": "userType",
+              "value": "1"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/gymsite",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-language",
+              "value": "zh-CN"
+            },
+            {
+              "name": "content-type",
+              "value": "text/html; charset=GBK"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:24:41 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 41844,
+            "mimeType": "text/html"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 41888,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.940Z",
+        "time": 20.376999978907406,
+        "timings": {
+          "blocked": 1.3679999813213946,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.20799999999999996,
+          "wait": 17.814999998483806,
+          "receive": 0.985999999102205,
+          "_blocked_queueing": 0.8689999813213944,
+          "_blocked_proxy": 0.177
+        }
+      },
+      {
+        "_fromCache": "memory",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1",
+          "lineNumber": 20
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "stylesheet",
+        "cache": {},
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/bootstrap/css/bootstrap.css",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "Referer",
+              "value": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1"
+            },
+            {
+              "name": "DNT",
+              "value": "1"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 09:04:11 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "last-modified",
+              "value": "Mon, 10 Oct 2022 02:42:11 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"GX6MuCXEq3m\""
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "content-type",
+              "value": "text/css"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 130408,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.970Z",
+        "time": 0.08099997648969293,
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0.06900000153109431,
+          "receive": 0.011999974958598614,
+          "_blocked_queueing": -1
+        }
+      },
+      {
+        "_fromCache": "memory",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1",
+          "lineNumber": 21
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "stylesheet",
+        "cache": {},
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/css/themes/default.css",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "Referer",
+              "value": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1"
+            },
+            {
+              "name": "DNT",
+              "value": "1"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 09:04:11 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "last-modified",
+              "value": "Mon, 10 Oct 2022 02:42:12 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"GX6Sc9kdOX0\""
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "content-type",
+              "value": "text/css"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 7086,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.970Z",
+        "time": 0.031000003218650818,
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0.026999972760677338,
+          "receive": 0.00400003045797348,
+          "_blocked_queueing": -1
+        }
+      },
+      {
+        "_fromCache": "memory",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1",
+          "lineNumber": 22
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "stylesheet",
+        "cache": {},
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/bootstrap/css/bootstrap-responsive.css",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "Referer",
+              "value": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1"
+            },
+            {
+              "name": "DNT",
+              "value": "1"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 09:04:11 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "last-modified",
+              "value": "Mon, 10 Oct 2022 02:42:11 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"GX6MuCXEQV0\""
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "content-type",
+              "value": "text/css"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 21750,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.970Z",
+        "time": 0.029999995604157448,
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0.02500001573935151,
+          "receive": 0.004999979864805937,
+          "_blocked_queueing": -1
+        }
+      },
+      {
+        "_fromCache": "memory",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1",
+          "lineNumber": 23
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "stylesheet",
+        "cache": {},
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/page.css",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "Referer",
+              "value": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1"
+            },
+            {
+              "name": "DNT",
+              "value": "1"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 09:04:11 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "last-modified",
+              "value": "Mon, 10 Oct 2022 02:43:01 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"GX+rYS0njaq\""
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "content-type",
+              "value": "text/css"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 32028,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.970Z",
+        "time": 0.025999965146183968,
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0.0219999928958714,
+          "receive": 0.003999972250312567,
+          "_blocked_queueing": -1
+        }
+      },
+      {
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1",
+          "lineNumber": 23
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "549141",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/js/jquery.js",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/js/jquery.js"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "script"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/js",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/x-javascript"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:24:41 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 97097,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 97212,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.970Z",
+        "time": 25.135000003501773,
+        "timings": {
+          "blocked": 3.334999996904284,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.36499999999999977,
+          "wait": 7.5070000062920155,
+          "receive": 13.928000000305474,
+          "_blocked_queueing": 1.0009999969042838,
+          "_blocked_proxy": 0.851
+        }
+      },
+      {
+        "_fromCache": "memory",
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1",
+          "lineNumber": 24
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "stylesheet",
+        "cache": {},
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/css/simplenso.css",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "Referer",
+              "value": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1"
+            },
+            {
+              "name": "DNT",
+              "value": "1"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 09:04:11 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "last-modified",
+              "value": "Mon, 10 Oct 2022 02:42:11 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"GX6MuCXEMVk\""
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "content-type",
+              "value": "text/css"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 5350,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.970Z",
+        "time": 0.0350000336766243,
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0.029999995604157448,
+          "receive": 0.00500003807246685,
+          "_blocked_queueing": -1
+        }
+      },
+      {
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1",
+          "lineNumber": 25
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "549141",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/bootstrap/js/bootstrap.min.js",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/bootstrap/js/bootstrap.min.js"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "script"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/bootstrap/js",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/x-javascript"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:24:41 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 31596,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 31648,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.970Z",
+        "time": 15.079999982845038,
+        "timings": {
+          "blocked": 3.3530000079348685,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.19699999999999962,
+          "wait": 9.24399997226894,
+          "receive": 2.286000002641231,
+          "_blocked_queueing": 1.2700000079348683,
+          "_blocked_proxy": 0.75
+        }
+      },
+      {
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1",
+          "lineNumber": 26
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "549141",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/scripts/jquery.cookie/jquery.cookie.js",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/scripts/jquery.cookie/jquery.cookie.js"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "script"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/scripts/jquery.cookie",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/x-javascript"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:24:41 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 1839,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 1873,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.970Z",
+        "time": 11.585000029299408,
+        "timings": {
+          "blocked": 3.3140000314861533,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.11299999999999999,
+          "wait": 5.782000008359551,
+          "receive": 2.375999989453703,
+          "_blocked_queueing": 1.5330000314861536,
+          "_blocked_proxy": 0.655
+        }
+      },
+      {
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1",
+          "lineNumber": 27
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "549141",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/scripts/simplenso/simplenso.js",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/scripts/simplenso/simplenso.js"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "script"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/scripts/simplenso",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/x-javascript"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:24:41 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 21262,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 21305,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.971Z",
+        "time": 21.253999962937087,
+        "timings": {
+          "blocked": 3.567999970767647,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.08399999999999985,
+          "wait": 12.543000003919005,
+          "receive": 5.058999988250434,
+          "_blocked_queueing": 1.761999970767647,
+          "_blocked_proxy": 0.7699999999999999
+        }
+      },
+      {
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1",
+          "lineNumber": 28
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "549141",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/My97DatePicker/WdatePicker.js",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/My97DatePicker/WdatePicker.js"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "script"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/My97DatePicker",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/x-javascript"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:24:41 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 9247,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 9281,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.971Z",
+        "time": 14.489000022877008,
+        "timings": {
+          "blocked": 3.590999989569187,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.14900000000000002,
+          "wait": 9.563000024706126,
+          "receive": 1.1860000086016953,
+          "_blocked_queueing": 1.9249999895691872,
+          "_blocked_proxy": 0.71
+        }
+      },
+      {
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1",
+          "lineNumber": 30
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "549141",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/gymjs/gymcommon.js",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/gymjs/gymcommon.js"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "script"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/gymjs",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/x-javascript"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:24:41 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 5000,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 5034,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.971Z",
+        "time": 14.124000037554651,
+        "timings": {
+          "blocked": 3.5470000192038715,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.11099999999999999,
+          "wait": 9.218000003311783,
+          "receive": 1.248000015038997,
+          "_blocked_queueing": 2.1200000192038715,
+          "_blocked_proxy": 0.4990000000000001
+        }
+      },
+      {
+        "_initiator": {
+          "type": "parser",
+          "url": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1",
+          "lineNumber": 31
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "549141",
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/gymjs/gymbook.js",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":authority",
+              "value": "50.tsinghua.edu.cn"
+            },
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":path",
+              "value": "/gymjs/gymbook.js"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,en;q=0.8"
+            },
+            {
+              "name": "cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; serverid=1425456; JSESSIONID=abcnaJhSoGILt_O6VpRpy"
+            },
+            {
+              "name": "dnt",
+              "value": "1"
+            },
+            {
+              "name": "referer",
+              "value": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "script"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "no-cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/gymjs",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "serverid",
+              "value": "1425456",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            },
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "/",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": "1969-12-31T23:59:59.000Z",
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/x-javascript"
+            },
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 15:24:41 GMT"
+            },
+            {
+              "name": "set-cookie",
+              "value": "JSESSIONID=abcnaJhSoGILt_O6VpRpy; Path=null; HttpOnly"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "JSESSIONID",
+              "value": "abcnaJhSoGILt_O6VpRpy",
+              "path": "null",
+              "domain": "50.tsinghua.edu.cn",
+              "expires": null,
+              "httpOnly": true,
+              "secure": false
+            }
+          ],
+          "content": {
+            "size": 15357,
+            "mimeType": "application/x-javascript"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 15409,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:19.971Z",
+        "time": 20.26700001442805,
+        "timings": {
+          "blocked": 3.4850000026412307,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.06899999999999995,
+          "wait": 9.845999993540346,
+          "receive": 6.867000018246472,
+          "_blocked_queueing": 2.286000002641231,
+          "_blocked_proxy": 0.393
+        }
+      },
+      {
+        "_fromCache": "memory",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "K",
+                "scriptId": "1828",
+                "url": "https://50.tsinghua.edu.cn/My97DatePicker/WdatePicker.js",
+                "lineNumber": 49,
+                "columnNumber": 2569
+              },
+              {
+                "functionName": "",
+                "scriptId": "1828",
+                "url": "https://50.tsinghua.edu.cn/My97DatePicker/WdatePicker.js",
+                "lineNumber": 49,
+                "columnNumber": 740
+              },
+              {
+                "functionName": "",
+                "scriptId": "1828",
+                "url": "https://50.tsinghua.edu.cn/My97DatePicker/WdatePicker.js",
+                "lineNumber": 49,
+                "columnNumber": 8134
+              }
+            ]
+          }
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "stylesheet",
+        "cache": {},
+        "pageref": "page_2",
+        "request": {
+          "method": "GET",
+          "url": "https://50.tsinghua.edu.cn/My97DatePicker/skin/WdatePicker.css",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "sec-ch-ua",
+              "value": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\""
+            },
+            {
+              "name": "Referer",
+              "value": "https://50.tsinghua.edu.cn/gymsite/cacheAction.do?ms=viewBook&gymnasium_id=3998000&item_id=4045681&time_date=2022-10-20&userType=1"
+            },
+            {
+              "name": "DNT",
+              "value": "1"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Tue, 18 Oct 2022 09:03:30 GMT"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "last-modified",
+              "value": "Mon, 10 Oct 2022 02:43:01 GMT"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"GX+rYS0nbos\""
+            },
+            {
+              "name": "x-frame-options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "name": "x-content-encoding-over-network",
+              "value": "gzip"
+            },
+            {
+              "name": "content-type",
+              "value": "text/css"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 158,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "101.6.6.219",
+        "startedDateTime": "2022-10-18T15:26:20.028Z",
+        "time": 0.15899998834356666,
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0.139000010676682,
+          "receive": 0.01999997766688466,
+          "_blocked_queueing": -1
+        }
+      }
+    ]
+  }
+}
