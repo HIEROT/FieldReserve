@@ -15,6 +15,9 @@ from collections import defaultdict
 from t_ocr import predict_image
 from time import sleep
 from apscheduler.schedulers.blocking import BlockingScheduler
+from multiprocessing import Process
+from goto import with_goto
+from goto import goto, label
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -27,7 +30,7 @@ if __name__ == '__main__':
     newdic3 = {entry['name']:entry['value'] for entry in dic['log']['entries'][1]['request']['queryString']}
     '''
     # 全局变量
-    flag_running_now = False
+    flag_running_now = True
 
     cnn_ocr = keras.models.load_model('./cnn_ocr_v1.h5')
     username = '2021310638'
@@ -36,13 +39,8 @@ if __name__ == '__main__':
     attempt_num = 3  # 每个场各抢几次
     max_reserve = 2  # 至多抢几个场
     days_ahead = 3  # 提前几天
-    # 羽毛球
-    time_session = [['18:00-20:00', 4], ['18:00-19:00', 2], ['19:00-20:00', 2]]  # 数字为半小时的倍数
-    field_no = ['06', '07', '08', '09', '05', '04', '03', '02', '11', '01', '12', '10']
-    gym_code = '3998000'
-    field_code = '4045681'
-    code_name = '羽'
-    cost_per_half_hour = 10
+    with open('ReserveInfo.json', encoding='utf-8') as f:
+        reserve_dict: dict = json.load(f)
     # 乒乓球
     # time_session = [['8:00-10:00', 4], ['12:00-14:00', 4], ['18:00-20:00', 4]]  # 数字为半小时的倍数
     # field_no = ['6', '7', '8', '9', '5', '4', '3', '2', '1']
@@ -50,31 +48,16 @@ if __name__ == '__main__':
     # field_code = '4037036'
     # code_name = '乒'
     # cost_per_half_hour = 5
-
-    captcha_header = None
-    reserve_header = None
-    full_cookie = None
-    time_diff = None
-    field_time = None
-    request_date = None
-    pred = None
-    http = None
+    time_diff = datetime.timedelta()
+    full_cookie = ''
     shed = BlockingScheduler()
+    field_time_for_every_field = {}
 
 
-    def Initializer():
-        global full_cookie
+    def Preprations():
         global time_diff
-        global request_date
-        global captcha_header
-        global reserve_header
-        global pred
-        global http
-        global shed
-        global field_time
-
-        combination = itertools.product(time_session, field_no)
-        request_date = str(datetime.date.today() + datetime.timedelta(days=days_ahead))
+        global full_cookie
+        global field_time_for_every_field
         http = urllib3.PoolManager()
         # 获取cookie
         cookie_request_header = {
@@ -93,16 +76,6 @@ if __name__ == '__main__':
         now_server = datetime.datetime.strptime(cookie_response.headers['date'], GMT_format)
         now_local = datetime.datetime.utcnow()
         time_diff = now_local - now_server
-        accurate_time = datetime.datetime(2022, 10, 20, 8, 0) + time_diff
-        if not flag_running_now:
-            if shed.get_job('reserve', 'default'):
-                shed.reschedule_job('reserve', 'default', 'cron', hour=accurate_time.hour, minute=accurate_time.minute,
-                                    second=accurate_time.second)
-            else:
-                shed.add_job(ReserveLoop, 'cron', hour=accurate_time.hour, minute=accurate_time.minute,
-                             second=accurate_time.second,
-                             id='reserve')
-            print(shed.get_job('reserve', 'default'))
         cookie1 = cookie_response.headers['set-cookie'].split(';')[0]
         cookie_request_header = {'accept': '*/*',
                                  'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8',
@@ -119,7 +92,7 @@ if __name__ == '__main__':
                                           redirect=False).headers[
             'set-cookie'].split(';')[0]
         full_cookie = cookie2 + '; ' + cookie1
-        # 登陆
+        # 登录
         login_header = {
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
             'accept-encoding': 'gzip, deflate, br',
@@ -147,13 +120,40 @@ if __name__ == '__main__':
             'x': str(x),
             'y': str(y)
         }
-        login_response = http.request('POST', 'https://50.tsinghua.edu.cn/j_spring_security_check',
-                                      fields=login_load,
-                                      headers=login_header,
-                                      redirect=False,
-                                      encode_multipart=False).data.decode()
-        # 抢场地
-        # 首先下载一下资源
+        http.request('POST', 'https://50.tsinghua.edu.cn/j_spring_security_check',
+                     fields=login_load,
+                     headers=login_header,
+                     redirect=False,
+                     encode_multipart=False)
+
+        for key, page in reserve_dict.items():
+            ret = ReserveInfoCapture(key, page)
+            if ret is not None:
+                field_time_for_every_field[key] = ret
+        if flag_running_now:
+            for key, field_time in field_time_for_every_field.items():
+                ReserveLoop(reserve_dict[key], field_time)
+        else:
+            process_list = []
+            for key, field_time in field_time_for_every_field.items():
+                p = Process(target=ReserveLoop, args=(reserve_dict[key], field_time,))
+                p.start()
+                process_list.append(p)
+            for p in process_list:
+                p.join()
+
+
+    def ReserveInfoCapture(field_name, single_field_dict):
+        time_session = single_field_dict['time_session']
+        field_no = single_field_dict['field_no']
+        gym_code = single_field_dict['gym_code']
+        field_code = single_field_dict['field_code']
+        code_name = single_field_dict['code_name']
+        combination = itertools.product(time_session, field_no)
+        request_date = str(datetime.date.today() + datetime.timedelta(days=days_ahead))
+        http = urllib3.PoolManager()
+
+        # 下载一下资源
         get_header = {
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
             'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8',
@@ -172,40 +172,48 @@ if __name__ == '__main__':
                                  request_date), fields=get_load, headers=get_header)
         cache = cache.data.decode('gbk')
         pattern = [
-            r"id:'([0-9]+)',time_session:'{}',field_name:'{}{}',overlaySize:'({})',can_net_book:'1'".format(
-                i[0], code_name, j, i[1]) for i, j in combination]
+            r"id:'([0-9]+)',time_session:'{}',field_name:'{}{}',overlaySize:'[1-9]+',can_net_book:'1'".format(
+                i, code_name, j) for i, j in combination]
         field_time = defaultdict(list)
         count = 0
         for p in pattern:
-            res = re.search(p, cache)
+            res = re.search(p, cache)  # 先找场子
             if res:
                 idx = count // len(field_no)
-                field_time[idx].append(('{}#{}'.format(res.group(1), request_date), res.group(2)))
+                cost_pattern = r"addCost\('{}','([0-9.]+)'\)".format(res.group(1))
+                cost = re.search(cost_pattern, cache).group(1)
+                field_time[idx].append(('{}#{}'.format(res.group(1), request_date), cost))
             count = count + 1
         # 生成抢场组合
         if not len(field_time):
             shed.reschedule_job('reserve', 'default', 'cron', hour=0, minute=0,
                                 second=0, month=1, day=1)
-            print("今天没有符合要求的场")
+            print("今天{}没有符合要求的场".format(field_name))
+            return None
+        return field_time
 
-        # if len(resource_id) == 1:
-        #     field_time = ['{}#{}'.format(i, request_date) for i in resource_id[0]]
-        # for idx in range(len(time_session) - 1):
-        #     combination = itertools.product(resource_id[idx], resource_id[idx + 1])
-        #     for i, j in combination:
-        #         field_time.append('{}#{}, {}#{}'.format(i, request_date, j, request_date))
 
-        # 下载验证码
-        captcha_header = {'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8',
-                          'cookie': full_cookie,
-                          'dnt': '1', 'origin': 'https://50.tsinghua.edu.cn',
-                          'referer': 'https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id={}&item_id={}&time_date={}&userType='.format(
-                              gym_code, field_code, request_date),
-                          'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
-                          'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"', 'sec-fetch-dest': 'empty',
-                          'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin',
-                          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
-                          'x-requested-with': 'XMLHttpRequest'}
+    def CaptchaIndentifier(jpg_bytes):
+        # 这里提前识别好验证码是为了保证第一个场的手速
+
+        imag = cv.imdecode(np.frombuffer(jpg_bytes, np.uint8), cv.IMREAD_COLOR)
+        imag = cv.resize(imag, (120, 30))
+        imag = cv.cvtColor(imag, cv.COLOR_BGR2RGB)
+        pred, _ = predict_image(cnn_ocr, imag)
+        # cv.imshow(pred, imag)
+        # while True:
+        #     if cv.waitKey() == 27:
+        #         break
+        # cv.destroyAllWindows()
+        return pred
+
+
+    @with_goto
+    def ReserveLoop(single_field_dict, field_time):
+        gym_code = single_field_dict['gym_code']
+        field_code = single_field_dict['field_code']
+        request_date = str(datetime.date.today() + datetime.timedelta(days=days_ahead))
+        http = urllib3.PoolManager()
         reserve_header = {'accept': '*/*',
                           'accept-encoding': 'gzip, deflate, br',
                           'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8',
@@ -223,33 +231,32 @@ if __name__ == '__main__':
                           'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
                           'x-requested-with': 'XMLHttpRequest'
                           }
-        # 这里提前识别好验证码是为了保证第一个场的手速
+        captcha_header = {'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8',
+                          'cookie': full_cookie,
+                          'dnt': '1', 'origin': 'https://50.tsinghua.edu.cn',
+                          'referer': 'https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id={}&item_id={}&time_date={}&userType='.format(
+                              gym_code, field_code, request_date),
+                          'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+                          'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"', 'sec-fetch-dest': 'empty',
+                          'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin',
+                          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+                          'x-requested-with': 'XMLHttpRequest'}
         jpg_bytes = http.request('GET',
                                  'https://50.tsinghua.edu.cn/Kaptcha.jpg', headers=captcha_header).data
-        imag = cv.imdecode(np.frombuffer(jpg_bytes, np.uint8), cv.IMREAD_COLOR)
-        imag = cv.resize(imag, (120, 30))
-        imag = cv.cvtColor(imag, cv.COLOR_BGR2RGB)
-        pred, _ = predict_image(cnn_ocr, imag)
-        # cv.imshow(pred, imag)
-        # while True:
-        #     if cv.waitKey() == 27:
-        #         break
-        # cv.destroyAllWindows()
-
-
-    def ReserveLoop():
-        global http
-        global pred
-        global shed
-        sleep(time_diff.microseconds / 1e6)  # 决不能在开场前就抢
+        pred = CaptchaIndentifier(jpg_bytes)
         session_list = list(field_time.keys())
         field_reserved = 0
+        current_time = datetime.datetime.now().timestamp()
+        reserve_time = (datetime.datetime.combine(datetime.date.today(), datetime.time(8, 0)) + time_diff).timestamp()
+        time_remain = reserve_time - current_time
+        if time_remain > 0:
+            sleep(time_remain)  # 决不能在开场前就抢
         for idx in range(attempt_num):
             # 订场
             for key in session_list:
-                for f_t, overlay_size in field_time[key]:
-                    # input("Press Enter to continue...")
-                    reserve_load = {'bookData.totalCost': str(int(overlay_size) * cost_per_half_hour),
+                for f_t, cost in field_time[key]:
+                    label.begin_reserve
+                    reserve_load = {'bookData.totalCost': cost,
                                     'bookData.book_person_zjh': '',
                                     'bookData.book_person_name': '',
                                     'bookData.book_person_phone': '18175862019',
@@ -271,15 +278,7 @@ if __name__ == '__main__':
                     response_json = json.loads(reserve_response.data.decode('gbk'))
                     jpg_bytes = http.request('GET',
                                              'https://50.tsinghua.edu.cn/Kaptcha.jpg', headers=captcha_header).data
-                    imag = cv.imdecode(np.frombuffer(jpg_bytes, np.uint8), cv.IMREAD_COLOR)
-                    imag = cv.resize(imag, (120, 30))
-                    imag = cv.cvtColor(imag, cv.COLOR_BGR2RGB)
-                    pred, _ = predict_image(cnn_ocr, imag)
-                    # cv.imshow(pred, imag)
-                    # while True:
-                    #     if cv.waitKey() == 27:
-                    #         break
-                    # cv.destroyAllWindows()
+                    pred = CaptchaIndentifier(jpg_bytes)
                     print(response_json['msg'])
                     if re.match(r'预定成功', response_json['msg']):
                         field_reserved = field_reserved + 1
@@ -289,21 +288,19 @@ if __name__ == '__main__':
                         session_list.remove(key)
                         break
                         # 成功抢到一个，下一轮不再抢同一时间的场
-                    elif re.match(r'预定失败：未到', response_json['msg']):  # TODO：确认返回消息，由于前面一定保证超过了八点，所以这里得等待一下
+                    elif re.match(r'预定失败：未到预约开放时间', response_json['msg']):
                         sleep(1)
+                        goto.begin_reserve
 
-
-
-        if not flag_running_now:
-            acc_time = datetime.datetime(2022, 10, 20, 8, 0) + time_diff
-            shed.reschedule_job('reserve', 'default', 'cron', hour=acc_time.hour, minute=acc_time.minute,
-                                second=acc_time.second)
-            print(shed.get_job('reserve', 'default'))
+        # if not flag_running_now:
+        #     acc_time = datetime.datetime(2022, 10, 20, 8, 0) + time_diff
+        #     shed.reschedule_job('reserve', 'default', 'cron', hour=acc_time.hour, minute=acc_time.minute,
+        #                         second=acc_time.second)
+        #     print(shed.get_job('reserve', 'default'))
 
 
     if not flag_running_now:
-        shed.add_job(Initializer, 'cron', day_of_week='sat,mon,wed', hour=7, minute=58, second=0)
+        shed.add_job(Preprations(), 'cron', day_of_week='fri,sat,mon,wed', hour=7, minute=58, second=0)
         shed.start()
     else:
-        Initializer()
-        ReserveLoop()
+        Preprations()
