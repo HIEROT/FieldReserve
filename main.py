@@ -277,7 +277,7 @@ if __name__ == '__main__':
     newdic3 = {entry['name']:entry['value'] for entry in dic['log']['entries'][1]['request']['queryString']}
     '''
     # 全局变量
-    flag_running_now = True
+    flag_running_now = False
     gpus = tf.config.list_physical_devices('GPU')
     if gpus:
         # Restrict TensorFlow to only use the first GPU
