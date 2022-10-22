@@ -4,7 +4,7 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import json
 import random
-import time
+import sys
 
 import urllib3
 import datetime
@@ -29,7 +29,7 @@ def ReserveLoop(single_field_dict, field_time):
     global num_reserved
     gym_code = single_field_dict['gym_code']
     field_code = single_field_dict['field_code']
-    request_date = str(datetime.date.today() + datetime.timedelta(days=days_ahead))
+    request_date = str(datetime.date.today() + datetime.timedelta(days=single_field_dict['days_ahead']))
     http = urllib3.PoolManager()
     reserve_header = {'accept': '*/*',
                       'accept-encoding': 'gzip, deflate, br',
@@ -64,8 +64,8 @@ def ReserveLoop(single_field_dict, field_time):
     session_list = list(field_time.keys())
     current_time = datetime.datetime.now().timestamp()
     reserve_time = (datetime.datetime.combine(datetime.date.today(), datetime.time(8, 0)) + time_diff).timestamp()
-    time_remain = reserve_time - current_time - 3
-    if time_remain > 0:
+    time_remain = reserve_time - current_time - 5
+    if time_remain > 0 and not flag_running_now:
         sleep(time_remain)  # 决不能在开场前就抢
     print('服务器时间现为{}'.format(str(datetime.datetime.now() - time_diff)))
     for idx in range(attempt_num):
@@ -93,18 +93,24 @@ def ReserveLoop(single_field_dict, field_time):
                                                 headers=reserve_header,
                                                 redirect=False,
                                                 encode_multipart=False)
-                response_json = json.loads(reserve_response.data.decode('gbk'))
+                try:
+                    response_json = json.loads(reserve_response.data.decode('gbk'))
+                except json.JSONDecodeError:
+                    jpg_bytes = http.request('GET',
+                                             'https://50.tsinghua.edu.cn/Kaptcha.jpg', headers=captcha_header).data
+                    pred = CaptchaIndentifier(jpg_bytes)
+                    continue
                 # toc = time.time()
                 # print(toc - tic)
                 jpg_bytes = http.request('GET',
                                          'https://50.tsinghua.edu.cn/Kaptcha.jpg', headers=captcha_header).data
                 pred = CaptchaIndentifier(jpg_bytes)
-                tic = time.time()
+                # tic = time.time()
                 # print(tic - toc)
                 print(response_json['msg'])
                 if re.match(r'预定成功', response_json['msg']):
                     num_reserved += 1
-                    if num_reserved >= max_reserve:
+                    if num_reserved >= single_field_dict['max_reserve']:
                         return
                         # 抢够了
                     session_list.remove(key)
@@ -125,6 +131,7 @@ def Preprations():
     global full_cookie
     global num_reserved
     global field_time_for_every_field
+    print('Beging Running')
     http = urllib3.PoolManager()
     # 获取cookie
     cookie_request_header = {
@@ -211,7 +218,7 @@ def ReserveInfoCapture(field_name, single_field_dict):
     field_code = single_field_dict['field_code']
     code_name = single_field_dict['code_name']
     combination = itertools.product(time_session, field_no)
-    request_date = str(datetime.date.today() + datetime.timedelta(days=days_ahead))
+    request_date = str(datetime.date.today() + datetime.timedelta(days=single_field_dict['max_reserve']))
     http = urllib3.PoolManager()
 
     # 下载一下资源
@@ -253,7 +260,6 @@ def ReserveInfoCapture(field_name, single_field_dict):
 
 
 def CaptchaIndentifier(jpg_bytes):
-    # 这里提前识别好验证码是为了保证第一个场的手速
 
     imag = cv.imdecode(np.frombuffer(jpg_bytes, np.uint8), cv.IMREAD_COLOR)
     imag = cv.resize(imag, (120, 30))
@@ -294,12 +300,15 @@ if __name__ == '__main__':
     username = '2021310638'
     password = '@TOOSKYravendell@'
     way_to_pay = '1'  # 是线上支付， 线下支付是0
-    attempt_num = 1  # 每个场各抢几次
-    max_reserve = 2  # 至多抢几个场
-    days_ahead = 3  # 提前几天
+    attempt_num = 3  # 每个场各抢几次
+    try:
+        with open(sys.argv[1], encoding='utf-8') as f:
+            print(f.name)
+            reserve_dict: dict = json.load(f)
+    except IndexError:
+        print('需要场地配置json文件')
+        sys.exit(1)
 
-    with open('ReserveInfo.json', encoding='utf-8') as f:
-        reserve_dict: dict = json.load(f)
     # 乒乓球
     # time_session = [['8:00-10:00', 4], ['12:00-14:00', 4], ['18:00-20:00', 4]]  # 数字为半小时的倍数
     # field_no = ['6', '7', '8', '9', '5', '4', '3', '2', '1']
@@ -313,7 +322,7 @@ if __name__ == '__main__':
     num_reserved = 0
     field_time_for_every_field = {}
     if not flag_running_now:
-        shed.add_job(Preprations, 'cron', day_of_week='fri,sat,mon,wed', hour=7, minute=58, second=0)
+        shed.add_job(Preprations, 'cron', day_of_week='fri,sat,mon,wed,sun', hour=7, minute=56, second=0)
         shed.start()
     else:
         Preprations()
