@@ -1,4 +1,5 @@
-import keras
+import time
+
 import cv2 as cv
 import numpy as np
 
@@ -30,14 +31,4 @@ def predict_image(model, image):
     return txt, confs
 
 
-if __name__ == '__main__':
-    cnn_ocr = keras.models.load_model('./cnn_ocr_v1.h5')
-
-    images_path = './4dAg.jpg'
-    imag = cv.imread(images_path)
-    imag = cv.resize(imag, (120, 30))
-    imag = cv.cvtColor(imag, cv.COLOR_BGR2RGB)
-    gt = images_path.split('.')[0]
-    pred, _ = predict_image(cnn_ocr, imag)
-    print(pred, _)
 

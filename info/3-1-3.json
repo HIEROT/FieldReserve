@@ -1,0 +1,18 @@
+{
+  "综体": {
+    "time_session": [
+      "18:30-20:30",
+    ],
+    "field_no": [
+      "2",
+      "1",
+      "9",
+      "10"
+    ],
+    "gym_code": "4797914",
+    "field_code": "4797899",
+    "code_name": "羽",
+    "max_reserve": 1,
+    "days_ahead": 3
+  }
+}

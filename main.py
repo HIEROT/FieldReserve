@@ -5,6 +5,7 @@
 import json
 import random
 import sys
+import time
 
 import urllib3
 import datetime
@@ -12,7 +13,6 @@ import itertools
 import re
 import numpy as np
 import cv2 as cv
-import keras
 import tensorflow as tf
 from collections import defaultdict
 from t_ocr import predict_image
@@ -260,11 +260,19 @@ def ReserveInfoCapture(field_name, single_field_dict):
 
 
 def CaptchaIndentifier(jpg_bytes):
-
+    # tic = time.time()
     imag = cv.imdecode(np.frombuffer(jpg_bytes, np.uint8), cv.IMREAD_COLOR)
+    # toc = time.time()
+    # print(toc - tic)
     imag = cv.resize(imag, (120, 30))
+    # tic = time.time()
+    # print(tic - toc)
     imag = cv.cvtColor(imag, cv.COLOR_BGR2RGB)
+    toc = time.time()
+    # print(toc - tic)
     pred, _ = predict_image(cnn_ocr, imag)
+    tic = time.time()
+    print(tic - toc)
     # cv.imshow(pred, imag)
     # while True:
     #     if cv.waitKey() == 27:
@@ -296,7 +304,7 @@ if __name__ == '__main__':
             # Visible devices must be set before GPUs have been initialized
             print(e)
     tf.keras.utils.disable_interactive_logging()
-    cnn_ocr = keras.models.load_model('./cnn_ocr_v1.h5')
+    cnn_ocr = tf.keras.models.load_model('./cnn_ocr_v1.h5')
     username = '2021310638'
     password = '@TOOSKYravendell@'
     way_to_pay = '1'  # 是线上支付， 线下支付是0
@@ -322,7 +330,7 @@ if __name__ == '__main__':
     num_reserved = 0
     field_time_for_every_field = {}
     if not flag_running_now:
-        shed.add_job(Preprations, 'cron', day_of_week='fri,sat,mon,wed,sun', hour=7, minute=56, second=0)
+        shed.add_job(Preprations, 'cron', hour=7, minute=56, second=0)
         shed.start()
     else:
         Preprations()

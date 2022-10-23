@@ -1,0 +1,17 @@
+{
+  "气膜馆": {
+    "time_session": [
+      "18:00-20:00"
+    ],
+    "field_no": [
+      "03",
+      "11",
+      "12"
+    ],
+    "gym_code": "3998000",
+    "field_code": "4045681",
+    "code_name": "羽",
+    "max_reserve": 1,
+    "days_ahead": 3
+  }
+}

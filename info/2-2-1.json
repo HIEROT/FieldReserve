@@ -1,0 +1,18 @@
+{
+  "西体": {
+    "time_session": [
+      "18:00-20:00"
+    ],
+    "field_no": [
+      "6",
+      "7",
+      "8",
+      "5"
+    ],
+    "gym_code": "4836273",
+    "field_code": "4836196",
+    "code_name": "羽",
+    "max_reserve": 1,
+    "days_ahead": 3
+  }
+}
