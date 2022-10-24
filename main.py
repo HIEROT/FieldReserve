@@ -64,9 +64,9 @@ def ReserveLoop(single_field_dict, field_time):
     session_list = list(field_time.keys())
     current_time = datetime.datetime.now().timestamp()
     reserve_time = (datetime.datetime.combine(datetime.date.today(), datetime.time(8, 0)) + time_diff).timestamp()
-    time_remain = reserve_time - current_time - 5
+    time_remain = reserve_time - current_time - 20
     if time_remain > 0 and not flag_running_now:
-        sleep(time_remain)  # 决不能在开场前就抢
+        sleep(time_remain)
     print('服务器时间现为{}'.format(str(datetime.datetime.now() - time_diff)))
     for idx in range(attempt_num):
         # 订场
@@ -268,11 +268,11 @@ def CaptchaIndentifier(jpg_bytes):
     # tic = time.time()
     # print(tic - toc)
     imag = cv.cvtColor(imag, cv.COLOR_BGR2RGB)
-    toc = time.time()
+    # toc = time.time()
     # print(toc - tic)
     pred, _ = predict_image(cnn_ocr, imag)
-    tic = time.time()
-    print(tic - toc)
+    # tic = time.time()
+    # print(tic - toc)
     # cv.imshow(pred, imag)
     # while True:
     #     if cv.waitKey() == 27:
@@ -291,7 +291,7 @@ if __name__ == '__main__':
     newdic3 = {entry['name']:entry['value'] for entry in dic['log']['entries'][1]['request']['queryString']}
     '''
     # 全局变量
-    flag_running_now = False
+    flag_running_now = True
     gpus = tf.config.list_physical_devices('GPU')
     if gpus:
         # Restrict TensorFlow to only use the first GPU
