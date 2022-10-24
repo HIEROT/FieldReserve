@@ -24,6 +24,10 @@ from goto import goto, label
 
 # Press the green button in the gutter to run the script.
 
+def GenerateForm(field_name, single_field_dict):
+
+
+
 @with_goto
 def ReserveLoop(single_field_dict, field_time):
     global num_reserved
@@ -62,12 +66,6 @@ def ReserveLoop(single_field_dict, field_time):
                              'https://50.tsinghua.edu.cn/Kaptcha.jpg', headers=captcha_header).data
     pred = CaptchaIndentifier(jpg_bytes)
     session_list = list(field_time.keys())
-    current_time = datetime.datetime.now().timestamp()
-    reserve_time = (datetime.datetime.combine(datetime.date.today(), datetime.time(8, 0)) + time_diff).timestamp()
-    time_remain = reserve_time - current_time - 20
-    if time_remain > 0 and not flag_running_now:
-        sleep(time_remain)
-    print('服务器时间现为{}'.format(str(datetime.datetime.now() - time_diff)))
     for idx in range(attempt_num):
         # 订场
         for key in session_list:
@@ -131,6 +129,7 @@ def Preprations():
     global full_cookie
     global num_reserved
     global field_time_for_every_field
+    global flag_reserve_begin_checked
     print('Beging Running')
     http = urllib3.PoolManager()
     # 获取cookie
@@ -201,6 +200,7 @@ def Preprations():
                  encode_multipart=False)
 
     for key, page in reserve_dict.items():
+        GenerateForm(key ,page)
         ret = ReserveInfoCapture(key, page)
         if ret is not None:
             field_time_for_every_field[key] = ret
@@ -208,10 +208,13 @@ def Preprations():
     for key, field_time in field_time_for_every_field.items():
         ReserveLoop(reserve_dict[key], field_time)
     num_reserved = 0
+    flag_reserve_begin_checked = False
     field_time_for_every_field = {}
 
 
+@with_goto
 def ReserveInfoCapture(field_name, single_field_dict):
+    global flag_reserve_begin_checked
     time_session = single_field_dict['time_session']
     field_no = single_field_dict['field_no']
     gym_code = single_field_dict['gym_code']
@@ -220,8 +223,13 @@ def ReserveInfoCapture(field_name, single_field_dict):
     combination = itertools.product(time_session, field_no)
     request_date = str(datetime.date.today() + datetime.timedelta(days=single_field_dict['max_reserve']))
     http = urllib3.PoolManager()
-
+    current_time = datetime.datetime.now().timestamp()
+    reserve_time = (datetime.datetime.combine(datetime.date.today(), datetime.time(8, 0)) + time_diff).timestamp()
+    time_remain = reserve_time - current_time - 10
+    if time_remain > 0 and not flag_running_now and not flag_reserve_begin_checked:
+        sleep(time_remain)
     # 下载一下资源
+    label.refresh_to_check_begin
     get_header = {
         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
         'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8',
@@ -239,6 +247,13 @@ def ReserveInfoCapture(field_name, single_field_dict):
                          'https://50.tsinghua.edu.cn/gymsite/cacheAction.do'.format(
                              request_date), fields=get_load, headers=get_header)
     cache = cache.data.decode('gbk')
+
+    if not flag_reserve_begin_checked:
+        if re.search(request_date, cache):
+            flag_reserve_begin_checked = True
+            print('预约开放！服务器时间现为{}'.format(str(datetime.datetime.now() - time_diff)))
+        else:
+            goto.refresh_to_check_begin
     pattern = [
         r"id:'([0-9]+)',time_session:'{}',field_name:'{}{}',overlaySize:'[1-9]+',can_net_book:'1'".format(
             i, code_name, j) for i, j in combination]
@@ -292,6 +307,7 @@ if __name__ == '__main__':
     '''
     # 全局变量
     flag_running_now = True
+    flag_reserve_begin_checked = False
     gpus = tf.config.list_physical_devices('GPU')
     if gpus:
         # Restrict TensorFlow to only use the first GPU
