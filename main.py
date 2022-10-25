@@ -24,6 +24,146 @@ from goto import goto, label
 
 # Press the green button in the gutter to run the script.
 
+def AccquireData():
+    return
+    filename = "综体.json"
+    # tag_info = {
+    #     "time_session": [
+    #         "7:00-8:00",
+    #         "8:00-9:00",
+    #         "9:00-10:00",
+    #         "10:00-11:00",
+    #         "11:00-11:30",
+    #         "11:30-13:00",
+    #         "13:00-14:00",
+    #         "14:00-15:00",
+    #         "15:00-16:00",
+    #         "16:00-17:00",
+    #         "17:00-18:00",
+    #         "18:00-19:00",
+    #         "19:00-20:00",
+    #         "20:00-22:00",
+    #         "11:00-12:00",
+    #         "12:00-14:00",
+    #         "14:00-16:00",
+    #         "16:00-18:00",
+    #         "18:00-20:00"
+    #     ],
+    #     "field_no": [
+    #         "01",
+    #         "02",
+    #         "03",
+    #         "04",
+    #         "05",
+    #         "06",
+    #         "07",
+    #         "08",
+    #         "09",
+    #         "10",
+    #         "11",
+    #         "12"
+    #     ],
+    #     "gym_code": "3998000",
+    #     "field_code": "4045681",
+    #     "code_name": "羽",
+    #     "max_reserve": 2,
+    #     "days_ahead": 2
+    # }
+    # tag_info = {
+    #     "time_session": [
+    #         "7:00-8:00",
+    #         "18:30-20:30",
+    #         "20:30-22:30",
+    #         "18:00-20:00",
+    #         "20:00-22:00"
+    #     ],
+    #     "field_no": [
+    #         "1",
+    #         "2",
+    #         "3",
+    #         "4",
+    #         "5",
+    #         "6",
+    #         "7",
+    #         "8"
+    #     ],
+    #     "gym_code": "4836273",
+    #     "field_code": "4836196",
+    #     "code_name": "羽",
+    #     "max_reserve": 1,
+    #     "days_ahead": 2
+    # }
+    tag_info = {
+        "time_session": [
+            "11:30-13:00",
+            "15:00-17:00",
+            "17:00-18:30",
+            "18:30-20:30",
+            "20:30-22:30",
+            "18:00-20:00",
+            "20:00-22:00"
+        ],
+        "field_no": [
+            "6",
+            "7",
+            "8",
+            "5",
+            "4",
+            "3",
+            "2",
+            "1",
+            "9",
+            "10"
+        ],
+        "gym_code": "4797914",
+        "field_code": "4797899",
+        "code_name": "羽",
+        "max_reserve": 1,
+        "days_ahead": 2
+    }
+
+    with open(filename, encoding='utf-8') as file:
+        field_info = json.load(file)
+    time_session = tag_info['time_session']
+    field_no = tag_info['field_no']
+    gym_code = tag_info['gym_code']
+    field_code = tag_info['field_code']
+    code_name = tag_info['code_name']
+    combination = itertools.product(time_session, field_no)
+    request_date = str(datetime.date.today() + datetime.timedelta(days=tag_info['days_ahead']))
+    http = urllib3.PoolManager()
+
+    # 下载一下资源
+    get_header = {
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+        'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8',
+        'cookie': '',
+        'dnt': '1',
+        'referer': 'https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id={}&item_id={}&time_date={}&userType='.format(
+            gym_code, field_code, request_date),
+        'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+        'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"', 'sec-fetch-dest': 'iframe',
+        'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'upgrade-insecure-requests': '1',
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'}
+    get_load = {'ms': 'viewBook', 'gymnasium_id': gym_code, 'item_id': field_code, 'time_date': request_date,
+                'userType': '1'}
+    cache = http.request('GET',
+                         'https://50.tsinghua.edu.cn/gymsite/cacheAction.do'.format(
+                             request_date), fields=get_load, headers=get_header)
+    cache = cache.data.decode('gbk')
+    pattern = [
+        r"id:'([0-9]+)',time_session:'({})',field_name:'({}{})',overlaySize:'[1-9]+',can_net_book:'1'".format(
+            i, code_name, j) for i, j in combination]
+    for p in pattern:
+        res = re.search(p, cache)  # 先找场子
+        if res:
+            cost_pattern = r"addCost\('{}','([0-9.]+)'\)".format(res.group(1))
+            cost = re.search(cost_pattern, cache).group(1)
+            field_info[res.group(2) + '#' + res.group(3)] = (res.group(1), cost)
+    with open(filename, 'w', encoding='utf-8') as file:
+        json.dump(field_info, file, ensure_ascii=False)
+
+
 @with_goto
 def ReserveLoop(single_field_dict, field_time):
     global num_reserved
@@ -64,7 +204,7 @@ def ReserveLoop(single_field_dict, field_time):
     session_list = list(field_time.keys())
     current_time = datetime.datetime.now().timestamp()
     reserve_time = (datetime.datetime.combine(datetime.date.today(), datetime.time(8, 0)) + time_diff).timestamp()
-    time_remain = reserve_time - current_time - 20
+    time_remain = reserve_time - current_time - 10
     if time_remain > 0 and not flag_running_now:
         sleep(time_remain)
     print('服务器时间现为{}'.format(str(datetime.datetime.now() - time_diff)))
@@ -214,43 +354,20 @@ def Preprations():
 def ReserveInfoCapture(field_name, single_field_dict):
     time_session = single_field_dict['time_session']
     field_no = single_field_dict['field_no']
-    gym_code = single_field_dict['gym_code']
-    field_code = single_field_dict['field_code']
     code_name = single_field_dict['code_name']
     combination = itertools.product(time_session, field_no)
-    request_date = str(datetime.date.today() + datetime.timedelta(days=single_field_dict['max_reserve']))
-    http = urllib3.PoolManager()
+    request_date = str(datetime.date.today() + datetime.timedelta(days=single_field_dict['days_ahead']))
 
-    # 下载一下资源
-    get_header = {
-        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-        'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8',
-        'cookie': full_cookie,
-        'dnt': '1',
-        'referer': 'https://50.tsinghua.edu.cn/gymbook/gymBookAction.do?ms=viewGymBook&gymnasium_id={}&item_id={}&time_date={}&userType='.format(
-            gym_code, field_code, request_date),
-        'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
-        'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"', 'sec-fetch-dest': 'iframe',
-        'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'upgrade-insecure-requests': '1',
-        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'}
-    get_load = {'ms': 'viewBook', 'gymnasium_id': gym_code, 'item_id': field_code, 'time_date': request_date,
-                'userType': '1'}
-    cache = http.request('GET',
-                         'https://50.tsinghua.edu.cn/gymsite/cacheAction.do'.format(
-                             request_date), fields=get_load, headers=get_header)
-    cache = cache.data.decode('gbk')
-    pattern = [
-        r"id:'([0-9]+)',time_session:'{}',field_name:'{}{}',overlaySize:'[1-9]+',can_net_book:'1'".format(
-            i, code_name, j) for i, j in combination]
+    pattern = [i + '#' + code_name + j for i, j in combination]
+
+    with open(field_name + '.json', encoding='utf-8') as file:
+        field_info = json.load(file)
     field_time = defaultdict(list)
     count = 0
     for p in pattern:
-        res = re.search(p, cache)  # 先找场子
-        if res:
+        if field_info.get(p):
             idx = count // len(field_no)
-            cost_pattern = r"addCost\('{}','([0-9.]+)'\)".format(res.group(1))
-            cost = re.search(cost_pattern, cache).group(1)
-            field_time[idx].append(('{}#{}'.format(res.group(1), request_date), cost))
+            field_time[idx].append(('{}#{}'.format(field_info[p][0], request_date), field_info[p][1]))
         count = count + 1
     # 生成抢场组合
     if not len(field_time):
@@ -281,6 +398,10 @@ def CaptchaIndentifier(jpg_bytes):
     return pred
 
 
+username = '2021310638'
+password = '@TOOSKYravendell@'
+way_to_pay = '1'  # 是线上支付， 线下支付是0
+attempt_num = 3  # 每个场各抢几次
 if __name__ == '__main__':
     '''
     import json
@@ -291,7 +412,7 @@ if __name__ == '__main__':
     newdic3 = {entry['name']:entry['value'] for entry in dic['log']['entries'][1]['request']['queryString']}
     '''
     # 全局变量
-    flag_running_now = True
+    flag_running_now = False
     gpus = tf.config.list_physical_devices('GPU')
     if gpus:
         # Restrict TensorFlow to only use the first GPU
@@ -305,10 +426,7 @@ if __name__ == '__main__':
             print(e)
     tf.keras.utils.disable_interactive_logging()
     cnn_ocr = tf.keras.models.load_model('./cnn_ocr_v1.h5')
-    username = '2021310638'
-    password = '@TOOSKYravendell@'
-    way_to_pay = '1'  # 是线上支付， 线下支付是0
-    attempt_num = 3  # 每个场各抢几次
+
     try:
         with open(sys.argv[1], encoding='utf-8') as f:
             print(f.name)
@@ -317,13 +435,6 @@ if __name__ == '__main__':
         print('需要场地配置json文件')
         sys.exit(1)
 
-    # 乒乓球
-    # time_session = [['8:00-10:00', 4], ['12:00-14:00', 4], ['18:00-20:00', 4]]  # 数字为半小时的倍数
-    # field_no = ['6', '7', '8', '9', '5', '4', '3', '2', '1']
-    # gym_code = '3998000'
-    # field_code = '4037036'
-    # code_name = '乒'
-    # cost_per_half_hour = 5
     time_diff = datetime.timedelta()
     full_cookie = ''
     shed = BlockingScheduler()
