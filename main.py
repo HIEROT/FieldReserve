@@ -72,6 +72,11 @@ def AccquireData():
     # tag_info = {
     #     "time_session": [
     #         "7:00-8:00",
+    #         "8:00-10:00",
+    #         "10:00-12:00",
+    #         "12:00-14:00",
+    #         "14:00-16:00",
+    #         "16:00-18:00",
     #         "18:30-20:30",
     #         "20:30-22:30",
     #         "18:00-20:00",
@@ -91,10 +96,15 @@ def AccquireData():
     #     "field_code": "4836196",
     #     "code_name": "羽",
     #     "max_reserve": 1,
-    #     "days_ahead": 2
+    #     "days_ahead": 3
     # }
     tag_info = {
         "time_session": [
+            "8:00-10:00",
+            "10:00-12:00",
+            "12:00-14:00",
+            "14:00-16:00",
+            "16:00-18:00",
             "11:30-13:00",
             "15:00-17:00",
             "17:00-18:30",
@@ -400,7 +410,7 @@ def CaptchaIndentifier(jpg_bytes):
 
 username = '2021310638'
 password = '@TOOSKYravendell@'
-way_to_pay = '1'  # 是线上支付， 线下支付是0
+way_to_pay = '0'  # 是线上支付， 线下支付是0
 attempt_num = 3  # 每个场各抢几次
 if __name__ == '__main__':
     '''
