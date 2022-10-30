@@ -26,78 +26,82 @@ from goto import goto, label
 
 def AccquireData():
     return
-    filename = "综体.json"
-    # tag_info = {
-    #     "time_session": [
-    #         "7:00-8:00",
-    #         "8:00-9:00",
-    #         "9:00-10:00",
-    #         "10:00-11:00",
-    #         "11:00-11:30",
-    #         "11:30-13:00",
-    #         "13:00-14:00",
-    #         "14:00-15:00",
-    #         "15:00-16:00",
-    #         "16:00-17:00",
-    #         "17:00-18:00",
-    #         "18:00-19:00",
-    #         "19:00-20:00",
-    #         "20:00-22:00",
-    #         "11:00-12:00",
-    #         "12:00-14:00",
-    #         "14:00-16:00",
-    #         "16:00-18:00",
-    #         "18:00-20:00"
-    #     ],
-    #     "field_no": [
-    #         "01",
-    #         "02",
-    #         "03",
-    #         "04",
-    #         "05",
-    #         "06",
-    #         "07",
-    #         "08",
-    #         "09",
-    #         "10",
-    #         "11",
-    #         "12"
-    #     ],
-    #     "gym_code": "3998000",
-    #     "field_code": "4045681",
-    #     "code_name": "羽",
-    #     "max_reserve": 2,
-    #     "days_ahead": 2
-    # }
-    # tag_info = {
-    #     "time_session": [
-    #         "7:00-8:00",
-    #         "8:00-10:00",
-    #         "10:00-12:00",
-    #         "12:00-14:00",
-    #         "14:00-16:00",
-    #         "16:00-18:00",
-    #         "18:30-20:30",
-    #         "20:30-22:30",
-    #         "18:00-20:00",
-    #         "20:00-22:00"
-    #     ],
-    #     "field_no": [
-    #         "1",
-    #         "2",
-    #         "3",
-    #         "4",
-    #         "5",
-    #         "6",
-    #         "7",
-    #         "8"
-    #     ],
-    #     "gym_code": "4836273",
-    #     "field_code": "4836196",
-    #     "code_name": "羽",
-    #     "max_reserve": 1,
-    #     "days_ahead": 3
-    # }
+    filename = "气膜馆.json"
+    tag_info = {
+        "time_session": [
+            "7:00-8:00",
+            "8:00-9:00",
+            "9:00-10:00",
+            "10:00-11:00",
+            "11:00-11:30",
+            "11:30-13:00",
+            "13:00-14:00",
+            "14:00-15:00",
+            "15:00-16:00",
+            "16:00-17:00",
+            "17:00-18:00",
+            "18:00-19:00",
+            "19:00-20:00",
+            "20:00-22:00",
+            "11:00-12:00",
+            "12:00-14:00",
+            "14:00-16:00",
+            "16:00-18:00",
+            "18:00-20:00",
+            "8:00-10:00",
+            "10:00-12:00"
+        ],
+        "field_no": [
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12"
+        ],
+        "gym_code": "3998000",
+        "field_code": "4045681",
+        "code_name": "羽",
+        "max_reserve": 2,
+        "days_ahead": 0
+    }
+    filename = "西体.json"
+    tag_info = {
+        "time_session": [
+            "7:00-8:00",
+            "8:00-10:00",
+            "10:00-12:00",
+            "12:00-14:00",
+            "14:00-16:00",
+            "16:00-18:00",
+            "18:30-20:30",
+            "20:30-22:30",
+            "18:00-20:00",
+            "20:00-22:00"
+        ],
+        "field_no": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "gym_code": "4836273",
+        "field_code": "4836196",
+        "code_name": "羽",
+        "max_reserve": 1,
+        "days_ahead": 1
+    }
+    filename = '综体.json'
     tag_info = {
         "time_session": [
             "8:00-10:00",
@@ -129,7 +133,7 @@ def AccquireData():
         "field_code": "4797899",
         "code_name": "羽",
         "max_reserve": 1,
-        "days_ahead": 2
+        "days_ahead": 0
     }
 
     with open(filename, encoding='utf-8') as file:
@@ -162,14 +166,17 @@ def AccquireData():
                              request_date), fields=get_load, headers=get_header)
     cache = cache.data.decode('gbk')
     pattern = [
-        r"id:'([0-9]+)',time_session:'({})',field_name:'({}{})',overlaySize:'[1-9]+',can_net_book:'1'".format(
+        r"id:'(\d+)',time_session:'({})',field_name:'({}{})',overlaySize:'\d+',can_net_book:'1'".format(
             i, code_name, j) for i, j in combination]
     for p in pattern:
         res = re.search(p, cache)  # 先找场子
         if res:
+            hash_code = re.search(
+                r"resourcesm.put\('{}', '(\w+)'\)".format(res.group(1)),
+                cache)
             cost_pattern = r"addCost\('{}','([0-9.]+)'\)".format(res.group(1))
             cost = re.search(cost_pattern, cache).group(1)
-            field_info[res.group(2) + '#' + res.group(3)] = (res.group(1), cost)
+            field_info[res.group(2) + '#' + res.group(3)] = (hash_code.group(1), cost)
     with open(filename, 'w', encoding='utf-8') as file:
         json.dump(field_info, file, ensure_ascii=False)
 
