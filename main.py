@@ -415,10 +415,9 @@ def CaptchaIndentifier(jpg_bytes):
     return pred
 
 
-username = '2021310638'
-password = '@TOOSKYravendell@'
 way_to_pay = '0'  # 是线上支付， 线下支付是0
 attempt_num = 3  # 每个场各抢几次
+flag_running_now = False
 if __name__ == '__main__':
     '''
     import json
@@ -428,8 +427,17 @@ if __name__ == '__main__':
     newdic2 = {entry['name']:entry['value'] for entry in dic['log']['entries'][1]['request']['postData']['params']}
     newdic3 = {entry['name']:entry['value'] for entry in dic['log']['entries'][1]['request']['queryString']}
     '''
-    # 全局变量
-    flag_running_now = False
+
+    try:
+        with open(sys.argv[1], encoding='utf-8') as f:
+            print(f.name)
+            reserve_dict: dict = json.load(f)
+            if not reserve_dict['status']:
+                sys.exit(0)
+    except IndexError:
+        print('需要场地配置json文件')
+        sys.exit(1)
+
     gpus = tf.config.list_physical_devices('GPU')
     if gpus:
         # Restrict TensorFlow to only use the first GPU
@@ -444,14 +452,8 @@ if __name__ == '__main__':
     tf.keras.utils.disable_interactive_logging()
     cnn_ocr = tf.keras.models.load_model('./cnn_ocr_v1.h5')
 
-    try:
-        with open(sys.argv[1], encoding='utf-8') as f:
-            print(f.name)
-            reserve_dict: dict = json.load(f)
-    except IndexError:
-        print('需要场地配置json文件')
-        sys.exit(1)
-
+    username = reserve_dict['username']
+    password = reserve_dict['password']
     time_diff = datetime.timedelta()
     full_cookie = ''
     shed = BlockingScheduler()
